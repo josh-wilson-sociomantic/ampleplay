@@ -5,7 +5,7 @@ module.exports = AmpersandModel.extend({
     props: {
         id: 'any',
         firstName: ['string', true, ''],
-        score: ['number', true, '100'],
+        score: ['number', true, 100 ],
         lastName: ['string', true, ''],
         coolnessFactor: ['number', true, 5]
     },

@@ -42,7 +42,9 @@ module.exports = Router.extend({
     },
 
     matchAdd: function () {
-        this.trigger('page', new MatchAddPage());
+        this.trigger('page', new MatchAddPage({
+            collection: app.people
+        }));
     },
 
     personAdd: function () {

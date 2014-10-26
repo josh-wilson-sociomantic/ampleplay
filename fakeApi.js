@@ -5,21 +5,21 @@ var people = [
         id: 1,
         firstName: 'Henrik',
         lastName: 'Joreteg',
-        score: '200',
+        score: 200,
         coolnessFactor: 11
     },
     {
         id: 2,
         firstName: 'Bob',
         lastName: 'Saget',
-        coolnessFactor: 2
-        score: '190',
+        coolnessFactor: 2,
+        score: 190
     },
     {
         id: 3,
         firstName: 'Larry',
         lastName: 'King',
-        score: '290',
+        score: 290,
         coolnessFactor: 4
     },
     {

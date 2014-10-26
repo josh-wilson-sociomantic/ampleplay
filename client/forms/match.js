@@ -1,26 +1,35 @@
 var FormView = require('ampersand-form-view');
-var InputView = require('ampersand-input-view');
+var SelectView = require('ampersand-select-view');
 var templates = require('../templates');
-var ExtendedInput = InputView.extend({
-    template: templates.includes.formInput()
-});
+// var ExtendedInput = InputView.extend({
+//     template: templates.includes.formInput()
+// });
 
 module.exports = FormView.extend({
     fields: function () {
+
+        console.log( this );
+
         return [
-            new ExtendedInput({
+            new SelectView({
                 label: 'Winner',
                 name: 'winner',
-                value: this.model && this.model.winner,
-                placeholder: 'Champion',
+                options: app.people,
+                // placeholder: 'Champion',
+                idAttribute: 'id',
+                // you can also specify which model attribute to use as the name
+                textAttribute: 'fullName',
                 parent: this
             }),
-            new ExtendedInput({
+            new SelectView({
                 label: 'loser',
                 name: 'loser',
-                value: this.model && this.model.loser,
+                options: app.people ,
                 placeholder: 'Looooooser',
-                parent: this
+                parent: this,
+                idAttribute: 'id',
+                // you can also specify which model attribute to use as the name
+                textAttribute: 'fullName'
             })
         ];
     }

@@ -52,7 +52,7 @@
 
     // pages/matchAdd.jade compiled template
     templatizer["pages"]["matchAdd"] = function tmpl_pages_matchAdd() {
-        return '<section class="page add-match"><h2>Add Match</h2><form data-hook="match-form"><fieldset data-hook="field-container"></fieldset><div class="buttons"><button data-hook="reset" type="submit" class="btn">Submit</button></div></form></section>';
+        return '<section class="page add-match"><h2>Add Match</h2><form data-hook="match-form"><fieldset data-hook="field-container"></fieldset><div class="buttons"><button data-hook="setmatch" type="submit" class="btn">Submit</button></div></form></section>';
     };
 
     // pages/personAdd.jade compiled template
